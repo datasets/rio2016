@@ -1,8 +1,6 @@
 name: Update Rio 2016 data
 
 on:
-  schedule:
-    - cron: "0 3 1 * *"
   workflow_dispatch:
 
 permissions:
