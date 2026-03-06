@@ -1,0 +1,131 @@
+{
+  "name": "rio2016",
+  "title": "Rio 2016 Olympic Games Athletes and Events",
+  "description": "Official statistics on athletes and events from the 2016 Olympic Games in Rio de Janeiro.",
+  "profile": "data-package",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Rio 2016 website",
+      "path": "https://www.rio2016.com/",
+      "title": "Rio 2016"
+    },
+    {
+      "name": "flother/rio2016",
+      "path": "https://github.com/flother/rio2016",
+      "title": "rio2016 dataset repository"
+    }
+  ],
+  "resources": [
+    {
+      "name": "athletes",
+      "path": "athletes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "nationality",
+            "type": "string"
+          },
+          {
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "name": "date_of_birth",
+            "type": "date",
+            "format": "%Y-%m-%d"
+          },
+          {
+            "name": "height",
+            "type": "number"
+          },
+          {
+            "name": "weight",
+            "type": "integer"
+          },
+          {
+            "name": "sport",
+            "type": "string"
+          },
+          {
+            "name": "gold",
+            "type": "integer"
+          },
+          {
+            "name": "silver",
+            "type": "integer"
+          },
+          {
+            "name": "bronze",
+            "type": "integer"
+          },
+          {
+            "name": "info",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "events",
+      "path": "events.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer"
+          },
+          {
+            "name": "sport",
+            "type": "string"
+          },
+          {
+            "name": "discipline",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "name": "venues",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ],
+  "version": "0.1.0"
+}
